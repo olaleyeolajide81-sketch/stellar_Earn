@@ -25,7 +25,11 @@
     "test:cy": "cypress run",
     "test:cy:ui": "cypress open",
     "test:cy:component": "cypress run --component",
-    "test:cy:component:ui": "cypress open --component"
+    "test:cy:component:ui": "cypress open --component",
+    "audit": "npm audit",
+    "audit:fix": "npm audit fix",
+    "audit:check": "npm audit --audit-level=moderate",
+    "audit:fix-all": "node scripts/fix-vulnerabilities.js"
   },
   "dependencies": {
     "@coinbase/wallet-sdk": "^4.3.7",
